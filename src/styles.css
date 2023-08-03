@@ -107,3 +107,11 @@ body{
     align-items: last baseline;
     text-align: left;
   }
+
+  .sub{
+    display: inline-block;
+  }
+  .sub span{
+    color: antiquewhite;
+    font-size: x-small;
+  }
