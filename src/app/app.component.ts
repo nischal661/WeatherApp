@@ -35,8 +35,6 @@ export class AppComponent implements OnInit {
   }
 
   OnSubmit(){
-    //this.getweatherdata(this.CityName);
-   // this.CityName = '';
    setTimeout(() => {
     this.Data = DataHandlerService.weatherdata;
    
@@ -53,7 +51,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.getweatherdata(this.CityName);
-    //this.CityName = '';
     this.displayname = this.CityName.toUpperCase();
   } 
   
