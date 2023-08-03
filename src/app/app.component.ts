@@ -28,7 +28,6 @@ export class AppComponent implements OnInit {
       this.max_temp = this.Data.max_temp;
       this.humidity = this.Data.humidity;
       this.cloud = this.Data.cloud_pct;
-        console.log(this.Data,'hellosqdq',this.cloud);
        this.getweatherdata(this.CityName);
     }, 2000);
      
@@ -43,7 +42,6 @@ export class AppComponent implements OnInit {
     this.min_temp = this.Data.min_temp;
     this.max_temp = this.Data.max_temp;
     this.humidity = this.Data.humidity;
-     console.log(this.Data,'hellosqdq', this.min_temp);
      this.getweatherdata(this.CityName);
      this.displayname = this.CityName.toUpperCase();
   }, 2000);
