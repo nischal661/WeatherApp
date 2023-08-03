@@ -5,18 +5,82 @@
   </form>
 </div>
 
-<div class="container">
+<!-- <div class="container">
   <div class="main">
     <div class="weather">
-      <div class="location">{{displayname}}</div>
-      <div class="temperature">{{ temp | number}} &deg;C</div>
-      <span>Min - {{min_temp}}&deg;C</span>
-      <span>Max - {{max_temp}}&deg;C</span>
-      <span>Humidity - {{humidity}}</span>
-      <span>wind-Speed - {{wind}}</span>
+      <img src="../assets/real-cold.png">
+      <div class="main-location">
+        <div class="location">{{displayname}}</div>
+        <div class="temperature">{{ temp | number}} &deg;C</div>
+        <span>Min - {{min_temp}}&deg;C</span>
+        <span>Max - {{max_temp}}&deg;C</span>
+        <span>Humidity - {{humidity}}</span>
+        <span>wind-Speed - {{wind}}</span>
+      </div>
+      
     </div>
   </div>
   <div class="sub">
-      <span>Created By Nishchal Shankar</span>
+      <p>Created By Nishchal Shankar</p>
   </div>
-</div>
+</div> -->
+
+<div class="container">
+  <div class="upper-data">
+    <img src="../assets/hot.png" *ngIf="temp > 15">
+    <img src="../assets/cold.png" *ngIf="temp <= 15">
+
+
+    <div class="weather-data">
+      <div class="location">{{displayname}}</div>
+      <div class="temperature">{{ temp | number}} &deg;C</div>
+    </div>
+  </div>
+
+  <div class="lower-data">
+    <div class="more-info-label">
+      More Information
+    </div>
+    <div class="more-info-container"> <!-- Container box to contain all details -->
+      <div class="info-block"> <!-- here we create 4 Info boxes -->
+        <div class="info-block-label"> <!-- here we put the image -->
+          <img src="../assets/min.png">
+          <span>Min</span>
+        </div>
+        <div class="info-block-value"> <!-- hold the value of info block-->
+          {{min_temp}}&deg;C
+        </div>
+      </div>
+    
+   <!-- Make a copy of the above div and change the names and imgs-->
+      <div class="info-block"> 
+        <div class="info-block-label"> 
+          <img src="../assets/max.png">
+          <span>Max</span>
+        </div>
+        <div class="info-block-value"> 
+          {{max_temp}}&deg;C
+        </div>
+      </div>
+
+      <div class="info-block"> 
+        <div class="info-block-label"> 
+          <img src="../assets/humidity.png">
+          <span>Humidity</span>
+        </div>
+        <div class="info-block-value"> 
+          {{humidity}}%
+        </div>
+      </div>
+
+      <div class="info-block"> 
+        <div class="info-block-label"> 
+          <img src="../assets/wind.png">
+          <span>Wind</span>
+        </div>
+        <div class="info-block-value"> 
+          {{wind}}km/h
+        </div>
+      </div>
+    </div>
+  </div>
