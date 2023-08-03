@@ -43,6 +43,7 @@ export class AppComponent implements OnInit {
     this.max_temp = this.Data.max_temp;
     this.humidity = this.Data.humidity;
      this.getweatherdata(this.CityName);
+     this.service.new(this.CityName);
      this.displayname = this.CityName.toUpperCase();
   }, 2000);
   }
