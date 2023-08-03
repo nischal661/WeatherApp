@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-    width: 600px;
+    width: 450px;
     height: 80vh;
     background-color: var(--blue-2);
     border-radius: 20px;
