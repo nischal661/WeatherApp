@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
   OnSubmit(){
    setTimeout(() => {
     this.Data = DataHandlerService.weatherdata;
-   
+   //nshqjdsiqjdqodqodqdqkp
     this.temp = this.Data.temp;
     this.wind = this.Data.wind_speed;
     this.min_temp = this.Data.min_temp;
@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
   getweatherdata(cityname:any){
     this.service.new(cityname);
     this.displayname = this.CityName.toUpperCase();
-    
+   
   }
 }
   
