@@ -26,7 +26,7 @@ export class ServiceService {
       const options = {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': '756e6b3f9fmsh75af314174d92a7p142ad9jsn9e828d56179d',
+          'X-RapidAPI-Key': *****API-KEY *******,
           'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
         }
       };
